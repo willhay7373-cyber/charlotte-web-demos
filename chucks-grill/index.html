@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Chuck's Grill in Charlotte, NC â restaurants.">
+  <meta property="og:title" content="Chuck's Grill">
+  <meta property="og:description" content="Chuck's Grill in Charlotte, NC â restaurants.">
+  <meta property="og:image" content="https://source.unsplash.com/1600x900/?american,grill,restaurant,burgers,charlotte">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://willhay7373-cyber.github.io/charlotte-web-demos/chucks-grill/">
+  <title>Chuck's Grill â Charlotte, NC</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: '#2C1A0E',
+            accent: '#B91C1C',
+            gold: '#D97706',
+            warm: '#F5F0EB'
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .hero-bg {
+      background-image: linear-gradient(rgba(44, 26, 14, 0.72), rgba(44, 26, 14, 0.82)),
+        url('https://source.unsplash.com/1600x900/?american,grill,restaurant,burgers,charlotte');
+      background-size: cover;
+      background-position: center;
+      background-color: #2C1A0E;
+    }
+    .section-divider {
+      border: none;
+      height: 3px;
+      background: linear-gradient(to right, #B91C1C, #D97706, #B91C1C);
+      margin: 0;
+    }
+    .service-card {
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .service-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    }
+    .star-rating {
+      color: #D97706;
+      letter-spacing: 2px;
+    }
+  </style>
+</head>
+<body class="bg-warm text-gray-900 antialiased">
+
+  <!-- NAV -->
+  <nav class="bg-brand shadow-lg sticky top-0 z-50">
+    <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
+      <span class="text-amber-300 font-extrabold text-xl tracking-wide">Chuck's Grill</span>
+      <a href="tel:+17045971580" class="bg-red-700 hover:bg-red-600 text-white font-semibold px-4 py-2 rounded-lg text-sm transition-colors">
+        Call Now
+      </a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero-bg min-h-screen flex items-center justify-center px-4 py-20">
+    <div class="max-w-3xl mx-auto text-center">
+      <div class="inline-block bg-red-700 text-amber-200 text-xs font-bold uppercase tracking-widest px-4 py-1 rounded-full mb-6">
+        4.7 Stars - 1,024 Reviews - Charlotte's Favorite
+      </div>
+      <h1 class="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-6 drop-shadow-lg">
+        Chuck's <span class="text-amber-400">Grill</span>
+      </h1>
+      <p class="text-lg md:text-2xl text-amber-100 mb-10 max-w-2xl mx-auto font-medium leading-relaxed">
+        Charlotte's Favorite Table â Real Food, Real Flavor, Right at Home.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="tel:+17045971580" class="bg-red-700 hover:bg-red-600 text-white font-bold px-8 py-4 rounded-xl text-lg shadow-xl transition-all">
+          Call Now - (704) 597-1580
+        </a>
+        <a href="#about" class="bg-amber-500 hover:bg-amber-400 text-brand font-bold px-8 py-4 rounded-xl text-lg shadow-xl transition-all">
+          See Our Menu
+        </a>
+      </div>
+      <p class="text-amber-200 text-sm mt-8 opacity-80">8001 Old Statesville Rd, Charlotte, NC 28269</p>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- ABOUT -->
+  <section id="about" class="bg-white py-16 px-4">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-12">
+        <span class="text-red-700 font-bold uppercase tracking-widest text-sm">Our Story</span>
+        <h2 class="text-4xl font-extrabold text-brand mt-2">A Charlotte Institution</h2>
+        <div class="w-16 h-1 bg-amber-500 mx-auto mt-4 rounded-full"></div>
+      </div>
+      <div class="bg-warm rounded-2xl shadow-sm p-8 md:p-12 border border-amber-100">
+        <div class="star-rating text-2xl text-center mb-6">
+          <span class="text-gray-600 text-base font-normal ml-2">4.7 out of 5 - 1,024 happy guests</span>
+        </div>
+        <p class="text-gray-700 text-base leading-relaxed mb-4">Chuck's Grill has been a cornerstone of the Charlotte community, serving up bold American flavors that keep neighbors coming back again and again. Nestled in north Charlotte, this beloved neighborhood grill has earned the trust and loyalty of over a thousand local regulars â and a near-perfect 4.7-star rating to prove it.</p><p class="text-gray-700 text-base leading-relaxed mb-4">From juicy hand-pressed burgers to slow-smoked ribs that fall right off the bone, Chuck's Grill is where comfort food gets the respect it deserves. The kitchen takes pride in doing the classics right â fresh ingredients, generous portions, and the kind of honest cooking that reminds you why homegrown spots beat the chains every time.</p><p class="text-gray-700 text-base leading-relaxed mb-4">Whether you're stopping in for a weeknight dinner, cheering on your team with a cold beer and a plate of wings, or treating the family to a Saturday feast, Chuck's Grill delivers the warmth and flavor that Charlotte locals have come to love. This isn't just a restaurant â it's your neighborhood table.</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- SERVICES / MENU -->
+  <section class="py-16 px-4" style="background-color:#F5F0EB;">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-12">
+        <span class="text-red-700 font-bold uppercase tracking-widest text-sm">What We Serve</span>
+        <h2 class="text-4xl font-extrabold text-brand mt-2">On the Menu</h2>
+        <div class="w-16 h-1 bg-amber-500 mx-auto mt-4 rounded-full"></div>
+        <p class="text-gray-600 mt-4 max-w-xl mx-auto">Bold flavors, generous portions, and the classics done right.</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        
+          <div class="service-card bg-white rounded-xl shadow-md p-6 flex items-center gap-4 border border-amber-100">
+            <div class="w-10 h-10 rounded-full bg-red-700 flex items-center justify-center flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-amber-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <span class="font-semibold text-gray-800 text-base">Hand-Crafted Burgers</span>
+          </div>
+          <div class="service-card bg-white rounded-xl shadow-md p-6 flex items-center gap-4 border border-amber-100">
+            <div class="w-10 h-10 rounded-full bg-red-700 flex items-center justify-center flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-amber-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <span class="font-semibold text-gray-800 text-base">Slow-Smoked Ribs & BBQ</span>
+          </div>
+          <div class="service-card bg-white rounded-xl shadow-md p-6 flex items-center gap-4 border border-amber-100">
+            <div class="w-10 h-10 rounded-full bg-red-700 flex items-center justify-center flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-amber-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <span class="font-semibold text-gray-800 text-base">Crispy Chicken Wings</span>
+          </div>
+          <div class="service-card bg-white rounded-xl shadow-md p-6 flex items-center gap-4 border border-amber-100">
+            <div class="w-10 h-10 rounded-full bg-red-700 flex items-center justify-center flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-amber-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <span class="font-semibold text-gray-800 text-base">USDA Choice Steaks</span>
+          </div>
+          <div class="service-card bg-white rounded-xl shadow-md p-6 flex items-center gap-4 border border-amber-100">
+            <div class="w-10 h-10 rounded-full bg-red-700 flex items-center justify-center flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-amber-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <span class="font-semibold text-gray-800 text-base">Classic Comfort Sides</span>
+          </div>
+          <div class="service-card bg-white rounded-xl shadow-md p-6 flex items-center gap-4 border border-amber-100">
+            <div class="w-10 h-10 rounded-full bg-red-700 flex items-center justify-center flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-amber-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <span class="font-semibold text-gray-800 text-base">Craft Beers on Tap</span>
+          </div>
+      </div>
+      <div class="text-center mt-10">
+        <a href="tel:+17045971580" class="inline-block bg-red-700 hover:bg-red-600 text-white font-bold px-8 py-4 rounded-xl text-lg shadow-lg transition-all">
+          Call to Ask About Today's Specials
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- CONTACT -->
+  <section id="contact" class="bg-white py-16 px-4">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-12">
+        <span class="text-red-700 font-bold uppercase tracking-widest text-sm">Find Us</span>
+        <h2 class="text-4xl font-extrabold text-brand mt-2">Visit Chuck's Grill</h2>
+        <div class="w-16 h-1 bg-amber-500 mx-auto mt-4 rounded-full"></div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+        <div class="rounded-2xl p-8 border border-amber-100 shadow-sm" style="background-color:#F5F0EB;">
+          <h3 class="text-xl font-bold text-brand mb-6">Get in Touch</h3>
+          <div class="space-y-4">
+            <div class="flex items-start gap-3">
+              <div class="w-8 h-8 rounded-full bg-red-700 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <span class="text-white text-sm">P</span>
+              </div>
+              <div>
+                <p class="font-semibold text-gray-800">Address</p>
+                <p class="text-gray-600">8001 Old Statesville Rd, Charlotte, NC 28269</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="w-8 h-8 rounded-full bg-red-700 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <span class="text-white text-sm">T</span>
+              </div>
+              <div>
+                <p class="font-semibold text-gray-800">Phone</p>
+                <a href="tel:+17045971580" class="text-red-700 font-bold text-lg" style="color:#B91C1C;">(704) 597-1580</a>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5" style="background-color:#D97706;">
+                <span class="text-white text-sm">R</span>
+              </div>
+              <div>
+                <p class="font-semibold text-gray-800">Rated by Locals</p>
+                <a href="https://www.google.com/maps/search/?api=1&query=Chuck's%20Grill&query_place_id=ChIJ7yyBY2mnVogR-ihonVnXuQ4" target="_blank" rel="noopener" style="color:#D97706;" class="font-medium">4.7 stars - 1,024 Google Reviews</a>
+              </div>
+            </div>
+          </div>
+          <a href="tel:+17045971580" class="mt-8 block w-full bg-red-700 text-white font-bold py-4 rounded-xl text-center text-lg shadow-md" style="background-color:#B91C1C;">
+            Call Now - (704) 597-1580
+          </a>
+        </div>
+        <div class="rounded-2xl overflow-hidden shadow-md border border-amber-100" style="height:320px;">
+          <iframe
+            src="https://maps.google.com/maps?q=8001%20Old%20Statesville%20Rd%2C%20Charlotte%2C%20NC%2028269&output=embed"
+            width="100%"
+            height="100%"
+            style="border:0; height:320px;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Chuck's Grill on Google Maps">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="background-color:#2C1A0E;" class="py-10 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <p class="text-2xl font-bold text-white mb-2">Chuck's Grill</p>
+      <p style="color:#FCD34D;" class="mb-1">8001 Old Statesville Rd, Charlotte, NC 28269</p>
+      <p class="mb-6"><a href="tel:+17045971580" style="color:#F59E0B;" class="font-semibold">(704) 597-1580</a></p>
+      <hr style="border-color:#78350F;" class="mb-6">
+      <p style="color:#FCD34D;" class="font-semibold text-sm mb-2">Built by Charlotte Web Services â Will Hay</p>
+      <p style="color:#92400E;" class="text-xs max-w-xl mx-auto leading-relaxed">
+        This is a free demo built with AI in minutes â the full custom version with your photos, booking, and domain is just $149/month including ongoing maintenance.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
